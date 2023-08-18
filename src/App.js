@@ -17,13 +17,12 @@ function App() {
       {/* <Container user={data} /> */}
       <div className="container">
         <h2>Users</h2>
-        <div className="cards">
+        <div className="cards-grid">
           {users.map((user) => (
-            <div key={user.id}>
-              <div><img src={user.avatar}/>{" "}
-              <label>{user.first_name}</label>
-              {" "}
-              <label>{user.last_name}</label>
+            <div key={user.id} className="cards">
+              <div><img src={user.avatar}/>
+              <p>Name : {user.first_name} {user.last_name}</p>  
+              <p>E mail : {user.email}</p>
               </div>
               </div>
           ))}

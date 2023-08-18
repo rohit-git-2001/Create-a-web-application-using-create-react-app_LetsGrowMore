@@ -89,4 +89,36 @@ nav ul li:hover {
   border-radius: 10px;
 }
 
+.cards-grid {
+  margin-top: 50px;
+  display: flex;
+  width: 1280px;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 340px;
+  background-color: #fff;
+  /* border: 1px solid black; */
+  box-shadow: 0px 7px 10px gray;
+  border-radius: 6px;
+  height: 400px;
+}
+
+.cards p {
+  display: block;
+  margin-top: 10px;
+}
+
+.cards img {
+  width: 200px;
+  border-radius: 6px;
+  box-shadow: 0px 7px 10px gray;
+}
+
 /* Container.jsx */
