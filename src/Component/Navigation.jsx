@@ -9,7 +9,7 @@ const Navigation = (props) => {
             <li>HOME</li>
             <li>ABOUT</li>
             <li>CONTACT</li>
-            <li><button id='user'  >Get Users</button></li>
+            <li><button id='user' onClick={props.toggle} >Get Users</button></li>
         </ul>
       </nav>
     </>
