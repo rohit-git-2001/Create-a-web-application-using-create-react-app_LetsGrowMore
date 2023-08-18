@@ -92,6 +92,8 @@ nav ul li:hover {
 .cards-grid {
   margin-top: 50px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 1280px;
   flex-wrap: wrap;
   gap: 24px;
@@ -104,7 +106,6 @@ nav ul li:hover {
   align-items: center;
   width: 340px;
   background-color: #fff;
-  /* border: 1px solid black; */
   box-shadow: 0px 7px 10px gray;
   border-radius: 6px;
   height: 400px;
@@ -113,6 +114,8 @@ nav ul li:hover {
 .cards p {
   display: block;
   margin-top: 10px;
+  font-size: 17px;
+  font-weight: 500;
 }
 
 .cards img {
@@ -122,3 +125,22 @@ nav ul li:hover {
 }
 
 /* Container.jsx */
+
+
+.box {
+  height: calc(100vh - 152px);
+  width: 1280px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.box h1 {
+  font-size: 50px;
+}
+
+.box h2 {
+  font-size: 30px;
+}
