@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-// import Container from "./Component/Container";
+import Container from "./Component/Container";
 import Navigation from "./Component/Navigation";
 
 function App() {
@@ -14,20 +14,7 @@ function App() {
   return (
     <>
       <Navigation toggle={getUsers} />
-      {/* <Container user={data} /> */}
-      <div className="container">
-        <h2>Users</h2>
-        <div className="cards-grid">
-          {users.map((user) => (
-            <div key={user.id} className="cards">
-              <div><img src={user.avatar}/>
-              <p>Name : {user.first_name} {user.last_name}</p>  
-              <p>E mail : {user.email}</p>
-              </div>
-              </div>
-          ))}
-        </div>
-      </div>
+      <Container user={users} />
     </>
   );
 }
