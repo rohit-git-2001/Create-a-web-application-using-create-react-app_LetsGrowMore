@@ -1,6 +1,6 @@
 import Container from "./Component/Container";
 import Navigation from "./Component/Navigation";
-import { SpinnerCircular } from 'spinners-react';
+import { SpinnerDotted } from 'spinners-react';
 import { useState } from "react";
 import "./App.css";
 
@@ -15,14 +15,14 @@ function App() {
       const json_response = await response.json();
       setUsers(json_response.data);
       setLoading(false);
-    }, 1000);
+    }, 4000);
   };
 
   return (
     <>
       <Navigation logoName={"LetsGrowMore"} toggle={getUsers} />
       {!loading && <Container user={users} />}
-      {loading && <div className="load"><SpinnerCircular /></div>}
+      {loading && <div className="load"><SpinnerDotted /></div>}
     </>
   );
 }

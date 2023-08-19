@@ -9,7 +9,7 @@ const Container = (props) => {
           {props.user.map((user) => (
             <div key={user.id} className="cards">
               <div>
-                <img src={user.avatar} />
+                <img src={user.avatar} alt="User" />
                 <p>
                   Name : {user.first_name} {user.last_name}
                 </p>
