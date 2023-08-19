@@ -4,7 +4,7 @@ const Navigation = (props) => {
   return (
     <>
       <nav>
-        <div><h1>LetsGrowMore</h1></div>
+        <div><h1>{props.logoName}</h1></div>
         <ul>
             <li>HOME</li>
             <li>ABOUT</li>
